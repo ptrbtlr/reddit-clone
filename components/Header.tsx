@@ -43,6 +43,32 @@ const Header = () => {
         />
         <button hidden type="submit" />
       </form>
+
+      <div className="mx-5 flex hidden items-center space-x-2 text-gray-500 lg:inline-flex">
+        <SparklesIcon className="icon" />
+        <GlobeIcon className="icon" />
+        <VideoCameraIcon className="icon" />
+        <hr className="h-10 border border-gray-100" />
+        <ChatIcon className="icon" />
+        <BellIcon className="icon" />
+        <PlusIcon className="icon" />
+        <SpeakerphoneIcon className="icon" />
+      </div>
+
+      <div className="ml-5 flex items-center lg:hidden">
+        <MenuIcon className="icon" />
+      </div>
+
+      <div className="hidden cursor-pointer items-center space-x-2 border border-gray-100 p-2 lg:flex">
+        <div className="relative h-5 w-5 flex-shrink-0">
+          <Image
+            src="https:/links.papareact.com/23l"
+            layout="fill"
+            objectFit="contain"
+          />
+        </div>
+        <p className="text-gray-400">Sign In</p>
+      </div>
     </div>
   )
 }
